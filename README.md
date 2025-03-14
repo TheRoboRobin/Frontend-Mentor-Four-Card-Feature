@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/product-preview-card-component-LLCf8wjyko)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/four-card-feature-gGSi-woVss)
 - Live Site URL: [Github](https://github.com/TheRoboRobin/Frontend-Mentor-Product-Preview-Card)
 
 ## My process

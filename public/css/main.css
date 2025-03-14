@@ -182,6 +182,7 @@ body {
 }
 .feature__title {
   font-size: 2.2rem;
+  font-weight: 600;
   line-height: 1.2;
 }
 .feature__text {
@@ -196,10 +197,12 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   text-align: center;
+  color: #697077;
 }
 .attribution a {
-  color: #549ef2;
+  color: #4c4e61;
   text-decoration: none;
+  font-weight: 600;
 }
 .attribution a:hover {
   color: #fcaf4a;
