@@ -26,7 +26,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop](./src/assets/images/screenshot__desktop.PNG)
+
+![Mobile](./src/assets/images/screenshot__mobile.PNG)
 
 ### Links
 
@@ -35,28 +37,30 @@ Users should be able to:
 
 ## My process
 
+I began by writing an outline. I'm planning to structure the cards container as a grid. Make it super easy to lay out the cards how I need. Because that seems to be the main focus of the challenge, I'm going to start with desktop first workflow.
+
+It was all fairly easy to write out in html. The only issue I had was that I overlooked an error with how my json was looking for assets to bring over to public. And so had to troubleshoot why my svgs weren't showing up. I ended up adding a container on the heading text after starting my scss. Made it easier to get the text to lay how I wanted.
+
+Building out the css was super straight forward. All things considered its a very basic component. I ended up putting a minmax on the grid columns to make it respond more smoothly. And later when doing the media queries, I altered how some things were structured just to make it respond better in the end.
+
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
 - Sass
 - GitHub Actions
 
 ### What I learned
 
+This was mainly an exercise in what is necessary to think responsively in the start. There is of course things that I didn't really think about that I later had to add to make it more responsive in the end. I could maybe do better on making the font sizes more responsive up front with calc and clamp like previously talked about in the course.
+
 ### Continued development
 
-### Useful resources
-
-- [Example resource 1](https://www.example.com) -
-- [Example resource 2](https://www.example.com) -
+I want to do a better job of structuring responsively up front. Not having to go back and restructure because it won't respond responsively. But that comes with practice.
 
 ## Author
 
 - Website - [Robin](https://github.com/TheRoboRobin)
 - Frontend Mentor - [@TheRoboRobin](https://www.frontendmentor.io/profile/TheRoboRobin)
-
-## Acknowledgments

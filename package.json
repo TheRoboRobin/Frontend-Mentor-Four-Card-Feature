@@ -6,10 +6,10 @@
   "author": "Robin",
   "scripts": {
     "build:sass": "sass  --no-source-map src/sass:public/css",
-    "copy:img": "copyfiles -u 1 ./src/img/**/* public",
+    "copy:img": "copyfiles -u 1 ./src/assets/**/* public",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
     "copy": "npm-run-all --parallel copy:*",
-    "watch:img": "onchange \"/src/img/**/*\" -- npm run copy:html",
+    "watch:img": "onchange \"/src/assets/**/*\" -- npm run copy:html",
     "watch:html": "onchange \"src/*.html\" -- npm run copy:html",
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
     "watch": "npm-run-all --parallel watch:*",

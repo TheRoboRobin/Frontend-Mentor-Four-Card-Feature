@@ -56,3 +56,17 @@ Regularly evaluates our talent to ensure quality
 
 Calculator
 Uses data from past projects to provide better delivery estimates
+
+## Structure
+
+site-container
+main.feature
+-h2.heading-secondary
+-h1.heading-primary
+-feature**description
+-feature**cards
+--feature**card
+---feature**subheader
+---feature**text
+---feature**img
+footer.footer

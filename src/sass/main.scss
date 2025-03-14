@@ -1,7 +1,239 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
+/////////////////////////
+// Variables          //
+////////////////////////
+
+//colors
+
+$color-red: #ea5353;
+$color-cyan: #45d3d3;
+$color-orange: #fcaf4a;
+$color-blue: #549ef2;
+
+$color-grey-dark: #4c4e61;
+$color-grey-light: #697077;
+$color-white: #ffffff;
+
+//typeography
+
+$font-size-par: 1.5rem;
+$font-size-med: 2.2rem;
+$font-size-head: 3.6rem;
+
+//media queries
+
+$screen-smallest: 23.5em;
+$screen-smaller-2: 27.5em;
+$screen-smaller-1: 40.6em;
+$screen-small: 45em;
+$screen-medium: 56.25em;
+$screen-large: 62.5em;
+$screen-larger: 90em;
+
+/////////////////////////
+// General            //
+////////////////////////
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $screen-small) {
+    font-size: 56.25%;
+  }
+
+  @media only screen and (max-width: $screen-smaller-2) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: $font-size-par;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-grey-dark;
+  background-color: $color-white;
+}
+
+.site-container {
+  margin: 10vh auto;
+  max-width: 120rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  @media only screen and (max-width: $screen-smaller-1) {
+    margin: 6.4rem auto;
+  }
+}
+
+.heading-primary {
+  font-size: $font-size-head;
+  font-weight: 600;
+  line-height: 1.2;
+
+  @media only screen and (max-width: $screen-smaller-2) {
+    font-size: 3.2rem;
+  }
+
+  @media only screen and (max-width: $screen-smallest) {
+    font-size: 3rem;
+  }
+}
+.heading-secondary {
+  font-size: $font-size-head;
+  font-weight: 200;
+  line-height: 1.2;
+
+  @media only screen and (max-width: $screen-smaller-2) {
+    font-size: 3.2rem;
+  }
+
+  @media only screen and (max-width: $screen-smallest) {
+    font-size: 3rem;
+  }
+}
+
+/////////////////////////
+// Main Component     //
+////////////////////////
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.4rem;
+
+  @media only screen and (max-width: $screen-large) {
+    padding: 0 1.2rem;
+  }
+
+  @media only screen and (max-width: $screen-smaller-2) {
+    padding: 0 3.2rem;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    max-width: 50rem;
+
+    @media only screen and (max-width: $screen-smaller-2) {
+      gap: 2.4rem;
+    }
+  }
+
+  &__description {
+    text-align: center;
+
+    @media only screen and (max-width: $screen-smaller-2) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__cards {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+
+    column-gap: 3.2rem;
+    row-gap: 3.6rem;
+
+    @media only screen and (max-width: $screen-medium) {
+      grid-template-columns: repeat(2, minmax(20rem, 1fr));
+    }
+
+    @media only screen and (max-width: $screen-smaller-1) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__card {
+    padding: 3.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba($color-grey-dark, 0.3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+
+    &--cyan {
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+      border-top: 0.5rem solid $color-cyan;
+
+      @media only screen and (max-width: $screen-medium) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    }
+    &--red {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      border-top: 0.5rem solid $color-red;
+
+      @media only screen and (max-width: $screen-medium) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    }
+    &--orange {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      border-top: 0.5rem solid $color-orange;
+
+      @media only screen and (max-width: $screen-medium) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    }
+    &--blue {
+      grid-column: 3 / 4;
+      grid-row: 1 / 3;
+      border-top: 0.5rem solid $color-blue;
+
+      @media only screen and (max-width: $screen-medium) {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    }
+  }
+  &__title {
+    font-size: $font-size-med;
+    line-height: 1.2;
+  }
+  &__text {
+    color: $color-grey-light;
+  }
+  &__icon {
+    padding: 2.4rem 1rem;
+    align-self: end;
+  }
+}
+
+/////////////////////////
+// attribution        //
+////////////////////////
+
+.attribution {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+
+  & a {
+    color: $color-blue;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-orange;
+    }
+  }
 }
