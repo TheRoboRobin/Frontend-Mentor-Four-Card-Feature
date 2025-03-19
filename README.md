@@ -64,3 +64,7 @@ I want to do a better job of structuring responsively up front. Not having to go
 
 - Website - [Robin](https://github.com/TheRoboRobin)
 - Frontend Mentor - [@TheRoboRobin](https://www.frontendmentor.io/profile/TheRoboRobin)
+
+## Acknowledgements
+
+- Thank you to Akiz-Ivanov for their comment. [@Akiz-Ivanov] (https://www.frontendmentor.io/profile/Akiz-Ivanov)
